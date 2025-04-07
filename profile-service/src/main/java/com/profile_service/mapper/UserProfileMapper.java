@@ -1,8 +1,8 @@
-package mapper;
+package com.profile_service.mapper;
 
-import dto.request.ProfileCreationRequest;
-import dto.response.UserProfileResponse;
-import entity.UserProfile;
+import com.profile_service.dto.request.ProfileCreationRequest;
+import com.profile_service.dto.response.UserProfileResponse;
+import com.profile_service.entity.UserProfile;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

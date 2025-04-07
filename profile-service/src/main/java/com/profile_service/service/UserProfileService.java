@@ -1,15 +1,15 @@
-package service;
+package com.profile_service.service;
 
-import dto.request.ProfileCreationRequest;
-import dto.response.UserProfileResponse;
-import entity.UserProfile;
+import com.profile_service.dto.request.ProfileCreationRequest;
+import com.profile_service.dto.response.UserProfileResponse;
+import com.profile_service.entity.UserProfile;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
-import mapper.UserProfileMapper;
+import com.profile_service.mapper.UserProfileMapper;
 import org.springframework.stereotype.Service;
-import repository.UserProfileRepository;
+import com.profile_service.repository.UserProfileRepository;
 
 @Service
 @RequiredArgsConstructor

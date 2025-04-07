@@ -1,12 +1,12 @@
-package controller;
+package com.profile_service.controller;
 
-import dto.request.ProfileCreationRequest;
-import dto.response.UserProfileResponse;
+import com.profile_service.dto.request.ProfileCreationRequest;
+import com.profile_service.dto.response.UserProfileResponse;
+import com.profile_service.service.UserProfileService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.web.bind.annotation.*;
-import service.UserProfileService;
 
 @RestController
 @RequestMapping("/users")

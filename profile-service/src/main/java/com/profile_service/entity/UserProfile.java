@@ -1,4 +1,4 @@
-package entity;
+package com.profile_service.entity;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
