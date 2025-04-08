@@ -8,6 +8,7 @@ import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Property;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -17,8 +18,9 @@ import java.time.LocalDate;
 @Node("user_profile")
 public class UserProfile {
     @Id
-    @GeneratedValue(generatorClass = GeneratedValue.UUIDGenerator.class)
-    String id;
+//    @GeneratedValue(generatorClass = GeneratedValue.UUIDGenerator.class)
+    String id = UUID.randomUUID().toString();
+
     @Property("userId")
     String userId;
 
